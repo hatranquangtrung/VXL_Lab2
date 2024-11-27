@@ -902,9 +902,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  800068a:	681b      	ldr	r3, [r3, #0]
  800068c:	2b00      	cmp	r3, #0
  800068e:	d123      	bne.n	80006d8 <HAL_TIM_PeriodElapsedCallback+0x94>
-			counter = 100;
+			counter = 50;
  8000690:	4b15      	ldr	r3, [pc, #84]	; (80006e8 <HAL_TIM_PeriodElapsedCallback+0xa4>)
- 8000692:	2264      	movs	r2, #100	; 0x64
+ 8000692:	2232      	movs	r2, #50	; 0x32
  8000694:	601a      	str	r2, [r3, #0]
 			status = 1;
  8000696:	4b15      	ldr	r3, [pc, #84]	; (80006ec <HAL_TIM_PeriodElapsedCallback+0xa8>)
@@ -935,9 +935,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  80006c4:	681b      	ldr	r3, [r3, #0]
  80006c6:	2b00      	cmp	r3, #0
  80006c8:	d108      	bne.n	80006dc <HAL_TIM_PeriodElapsedCallback+0x98>
-			counter = 100;
+			counter = 50;
  80006ca:	4b07      	ldr	r3, [pc, #28]	; (80006e8 <HAL_TIM_PeriodElapsedCallback+0xa4>)
- 80006cc:	2264      	movs	r2, #100	; 0x64
+ 80006cc:	2232      	movs	r2, #50	; 0x32
  80006ce:	601a      	str	r2, [r3, #0]
 			status = 0;
  80006d0:	4b06      	ldr	r3, [pc, #24]	; (80006ec <HAL_TIM_PeriodElapsedCallback+0xa8>)

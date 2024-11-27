@@ -338,7 +338,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 			HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, SET);
 			display7SEG(1);
 			if (counter == 0){
-			counter = 100;
+			counter = 50;
 			status = 1;
 			}
 			break;
@@ -349,7 +349,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 			HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, RESET);
 			display7SEG(2);
 			if (counter==0){
-			counter = 100;
+			counter = 50;
 			status = 0;
 			}
 			break;
