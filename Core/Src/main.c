@@ -329,6 +329,18 @@ void display7SEG (int counter){
 				}
 		}
 }
+const int MAX_LED = 4;
+int index_led=0;
+int led_buffer[4]={1,2,3,4};
+void update7SEG(int index){
+	switch(index){
+	case 0: display7SEG(1); break;
+	case 1: display7SEG(2); break;
+	case 2: display7SEG(3); break;
+	case 3: display7SEG(4); break;
+	default: break;
+	}
+}
 
 int status = 0, counter = 50, turn = 0;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)

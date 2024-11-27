@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00020010  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00008501  00000000  00000000  00020039  2**0
+ 12 .debug_info   00008577  00000000  00000000  00020039  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00001521  00000000  00000000  0002853a  2**0
+ 13 .debug_abbrev 00001521  00000000  00000000  000285b0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000938  00000000  00000000  00029a60  2**3
+ 14 .debug_aranges 00000940  00000000  00000000  00029ad8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000890  00000000  00000000  0002a398  2**3
+ 15 .debug_ranges 00000898  00000000  00000000  0002a418  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  000162a2  00000000  00000000  0002ac28  2**0
+ 16 .debug_macro  000162a2  00000000  00000000  0002acb0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000a60a  00000000  00000000  00040eca  2**0
+ 17 .debug_line   0000a639  00000000  00000000  00040f52  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00081f61  00000000  00000000  0004b4d4  2**0
+ 18 .debug_str    00081f8f  00000000  00000000  0004b58b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000cd435  2**0
+ 19 .comment      00000053  00000000  00000000  000cd51a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000025ec  00000000  00000000  000cd488  2**2
+ 20 .debug_frame  00002610  00000000  00000000  000cd570  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -855,6 +855,8 @@ void display7SEG (int counter){
  8000644:	40010c00 	.word	0x40010c00
 
 08000648 <HAL_TIM_PeriodElapsedCallback>:
+	}
+}
 
 int status = 0, counter = 50, turn = 0;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
